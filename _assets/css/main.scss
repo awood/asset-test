@@ -1,0 +1,33 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import 'bootstrap';
+
+$dialog-background: $gray-100;
+$sidebar-background: $gray-100;
+
+@mixin sidebar {
+  background-color: $sidebar-background;
+  margin-right: 41px;
+  font-size: $font-size-base;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+div.sidebar-right {
+  @include sidebar;
+  float: right;
+}
+
+div.sidebar-left {
+  @include sidebar;
+  float: left;
+}
+
+img.stat-block {
+}
+
+blockquote {
+  // background-color: $dialog-background;
+  // font-size: $font-size-base;
+}
